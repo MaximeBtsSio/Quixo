@@ -1,8 +1,9 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
+#include <QPixmap>
 #include <QGraphicsPixmapItem>
 #include <QGraphicsScene>
-#include <QPixmap>
+
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -10,9 +11,9 @@ MainWindow::MainWindow(QWidget *parent) :
 
 {
     ui->setupUi(this);
-    QPixmap * mon_image = new QPixmap ("/chat.jpg");
-    QGraphicsPixmapItem * mon_item = new QGraphicsPixmapItem (* mon_image);
-    QGraphicsScene * ma_scene = new QGraphicsScene (ui->ma_vue);
+    QPixmap * mon_image = new QPixmap ("/home/etudiant/Téléchargements/chat.jpg");
+    QGraphicsPixmapItem * mon_item = new QGraphicsPixmapItem(* mon_image);
+    QGraphicsScene * ma_scene = new QGraphicsScene(ui->ma_vue);
     ma_scene->addItem(mon_item);
     ui->ma_vue->setScene(ma_scene);
 
