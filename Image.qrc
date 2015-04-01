@@ -1,6 +1,8 @@
 <RCC>
     <qresource prefix="/">
         <file>Quixo.pro.user</file>
-        <file>../Téléchargements/chat.jpg</file>
+        <file>../Téléchargements/imagerond.jpg</file>
+        <file>../Téléchargements/imageneutre.jpg</file>
+        <file>../Téléchargements/imagecroix.jpg</file>
     </qresource>
 </RCC>
